@@ -1,0 +1,70 @@
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {
+    border: 3px;
+    border-style: groove;
+}
+p.ridge {
+    border: 3px;
+    border-style: ridge;
+}
+p.inset {border: 3px;border-style: inset;}
+p.outset {border: 3px;border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {
+    border-style: dotted/*parte de cima da borda*/ dashed/*direita da borda*/ solid/*parte de baixo da borda*/ double/*esquerda*/;
+}
+/*segue uma sequência primeiro style da borda sempre é em cima, o segundo na direita, o terceiro 
+em baixo, o quarto na esquerda, se colocar um quinto style a borda some*/
+/*fim border*/
+
+/*início margin*/
+.control-margin{
+    border: 1px solid black;
+    margin: 5% 10%;
+    /*primeiro é pra cima baixo, segundo esquerda direita*/
+    /*primeiro é cima, segundo direita ou os dois lado se tiver 2 ou tres styles,
+    teceiro baixo, quarto esquerda*/
+    margin: 20px 10% 10px 20%;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+.control-padding{
+    border: 1px solid black;
+    padding: 20px 10% 10px 20%;
+    padding-top: 20px;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-left: 20%;
+}
+/*fim das margins e paddings*/
+
+/*início da manipulação de Tamanho */
+
+.control-height-width{
+    border: 2px solid black;
+    height: 300px;
+    max-width: 300px;
+}
+/* fim a manipulação de tamanho*/
+
+/* Manipulando divs*/
+
+.div-pai{
+    margin: 20px;
+    height: 300px;
+    width: 600px;
+    background-color: black;
+}
+.div-filho{
+    margin: auto;
+    width: 60%;
+    height: 40px;
+    background-color: darkmagenta;
+    text-align: center;
+}
