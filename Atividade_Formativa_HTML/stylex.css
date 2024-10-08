@@ -1,0 +1,62 @@
+.que1{
+    height: 50px;
+    background-color: gold;
+    h1{
+        padding-top: 6px;
+    }
+}
+.que2{
+    height: 50px;
+    background-color: silver;
+    h1{
+        padding-top: 6px;
+    }
+}
+.que3{
+    height: 50px;
+    background-color:  rgb(201, 117, 52);
+    h1{
+        padding-top: 6px;
+    }
+}
+img{
+    margin-top: 10px;
+    margin-left: 37%;
+    margin-right: 44%;
+    width: 312px;
+    height: 360px;
+    border-radius: 5px;
+}
+.fingimento{
+    h2{
+        margin: 1px;
+        border: solid 1px;
+    }
+}
+.o{
+    padding-left: 20%;
+}
+p{
+    padding-left: 20%;
+    max-width: 50%;
+    font-size: larger;
+}
+iframe{
+    height: 450px;
+    width: 860px;
+    padding-left: 22%;
+    padding-right: 20%;
+}
+.diferente{
+    height: 400px;
+    width: 720px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+button{
+    margin-left: 90%;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: lightblue;
+}

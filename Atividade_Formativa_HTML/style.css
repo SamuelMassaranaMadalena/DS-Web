@@ -1,0 +1,39 @@
+body{
+    background-color: lightslategray;
+}
+.ptcima{
+    height: 36.5px;
+    width: 2000000px;
+    border-left: solid 100px;
+    border-color: grey;
+    margin-bottom: 50px;
+    h1{
+        background-color: grey;
+    }
+}
+.gran{
+    height: 515px;
+    width: 2000px;
+}
+div{
+    height: 515px;
+    width: 2000px;
+}
+button{
+    border: transparent;
+    width: 280px;
+}
+img{
+    height: 312px;
+    width: 210px;
+    padding-top: 10px ;
+}
+.pr{
+    background-color: gold;
+}
+.sec{
+    background-color: silver;
+}
+.ter{
+    background-color: rgb(201, 117, 52);
+}
