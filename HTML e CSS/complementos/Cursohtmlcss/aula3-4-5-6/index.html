@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- aula 02 -->
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"required>
+        <label for="tel">Telefone:</label>
+        <input type="tel" name="telefone" id="tel" required>
+        <label for="dtn">Data de nascimento:</label>
+        <input type="date" name="dt-nasc" id="dtn" required>
+        <label class="medidas" for="peso">Peso:</label>
+        <input class="medidas" type="number" name="peso" id="peso" required>
+        <label class="medidas" for="altu">Altura:</label>
+        <input class="medidas" type="number" name="altura" id="altu" required step="0.01" min="1" max="2">
+        <label for="ft">Foto:</label>
+        <input type="file" name="foto" id="ft" required>
+
+        <!-- Aula 03 -->
+        <label>Plano:</label>
+        <input class="que" type="radio" name="p" id="radios">
+        <label class="que" for="radios">semanal</label>
+        <input class="que" type="radio" name="p" id="radiom">
+        <label class="que" for="radiom">mensal</label>
+        <input class="que" type="radio" name="p" id="radioa">
+        <label class="que" for="radioa">anual</label>
+        <!-- Aula 04 -->
+        <div class="dias">
+            <label>Dias da semana</label>
+            <input class="que" type="checkbox" name="seg" id="seg">
+            <label class="que" for="seg">Segunda-feira</label>
+            <input class="que" type="checkbox" name="ter" id="ter">
+            <label class="que" for="ter">Terça-feira</label>
+            <input class="que" type="checkbox" name="qua" id="qua">
+            <label class="que" for="qua">Quarta-feira</label>
+            <input class="que" type="checkbox" name="qui" id="qui">
+            <label class="que" for="qui">Quinta-feira</label>
+            <input class="que" type="checkbox" name="sex" id="sex">
+            <label class="que" for="sex">Sexta-feira</label>
+        </div>
+        <!-- Aula 05 -->
+        <!-- elemento for no label-->
+
+        <!-- Aula 06 -->
+        <label for="opcao">Objetivo principal do treino:</label>
+        <select name="objetivo" id="opcao" required>
+            <option value="">Selecione</option>
+            <option value="massamusc">Ganho de massa muscular</option>
+            <option value="melhoriacardvasc">Melhoria da saúde cardiovascular</option>
+            <option value="flexibil">Aumento da flexibilidade</option>
+            <option value="ment">Melhoria da saúde mental</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <!-- Aula 07 -->
+        <label for="adic">Informações adicionais:</label>
+        <textarea name="inform" id="adic" cols="30" rows="10" required placeholder="Digite um breve texto com informações adicionais"></textarea><br>
+
+        <!-- Aula 08 -->
+        <input type="submit" name="enviar" value="ENVIAR" id="enviar">
+        <input type="reset" name="resetar">
+        <button type="button">Clique aqui</button>
+
+        <!-- Aula 09 -->
+        <!--atributos: Required, step e placeholder-->
+
+        <!-- Aula 11 -->
+        <!-- class pra estilização em css -->
+
+        <!-- Aula 15 -->
+        <!-- Botão enviar -->
+    </form>
+</body>
+</html>
