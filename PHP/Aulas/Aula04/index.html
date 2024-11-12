@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="phpan.php" method="post">
+        <img src="senai.png" align="right">
+        <b>Formulário: <br>Aluno e Máquina SENAI</b>
+        
+        <label for="alun">Aluno:</label>
+        <input type="text" id="alun" required><br>
+        <label for="numchamd">N° da chamada:</label>
+        <input type="number" id="numchamd" min="1" max="35" required><br>
+        
+        <label for="patrimaq">Patrimônio máquina:</label>
+        <input type="number" id="patrimaq" max="9999999" required><br>
+        <label for="nummaq">Número da máquina:</label>
+        <input type="text" id="nummaq" min="1" max="32" required><br>
+        <label for="ft">Foto da máquina:</label>
+        <input type="file" id="ft" required><br>
+        <label for="ST">ST (Service Tag):</label>
+        <input type="text" id="ST" required><br>
+
+        <input type="submit" value="Cadastro" name="Cadastrar" id="Cadastrar"><br>
+        <input type="reset" value="Limpar"><br>
+
+    </form>
+
+</body>
+</html>

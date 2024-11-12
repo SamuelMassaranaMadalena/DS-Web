@@ -1,0 +1,35 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    font-family: "Roboto", sans-serif;
+}
+input, label{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+form{
+    width: 900px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+b{
+    display: block;
+    padding-top: 5%;
+    text-align: auto; 
+    padding-bottom: 10%;
+    text-align: center;     
+}
+img{
+    margin-top: 2%;
+    margin-right: 2% ;
+}
+#Cadastrar:hover{
+    background-color: black;
+    color: white;
+    transition: all linear 1s;
+}
