@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG's</title>
     <style>
+        body {
+            background-image: url('foto.jpg');
+            background-size: cover;
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
         img{
             width: 100px;
             height: 100px;
         }
+        .container{
+            height: 2000px;
+            width: 800px;
+            background-color: aquamarine;
+            border: 1px solid white;
+            background-image: url(pombos.jpg);
+            background-size: contain;
+            background-repeat: repeat;
+            background-position: top center;
+            margin: 0 auto;
+        }
+        .menuzin{
+            width: 100%;
+            background-color: aquamarine;
+            position: sticky;
+            top: 0;
+            display: flex;  
+        }
+        h1{
+            margin-top: 36px;
+            margin-left: 4px;
+            max-width: fit-content;
+        }
     </style>
 </head>
 <body>
-    <img src="insta.svg">
+    <div class="menuzin">
+        <img src="insta.svg">
+        <h1>Menu</h1>
+    </div>
+    <div class="container"></div>
 </body>
 </html>

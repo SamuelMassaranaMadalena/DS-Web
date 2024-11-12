@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com vídeos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .sour-gummy{
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:400;
+            font-style:normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+        body{
+            background-image: url(wallace.jpeg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+        video{
+            margin-top: 10px;
+            margin-left: 25px;
+            max-width: 500px;
+            filter: brightness(95%);
+        }
+        div{
+            position: fixed;
+        }
+        h1{
+            margin-left: 60px;
+            font-family: "Sour Gummy", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <video src="wallace.mp4" poster="wallace.jpeg" controls loop muted title="Wallace e Gromit: Avengança"></video>
+        <h1>Wallace e Gromit: Avengança</h1>
+    </div>
+</body>
+</html>
