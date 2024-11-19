@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animando</title>
+    <style>
+        /*estrutura básica
+        @keyframes nome-da-animacao {
+            0% {
+            propriedade: valor-inicial;
+            }
+            100% {
+            propriedade: valor-final;
+
+            Efeitos em Elementos 7
+
+            }
+        }*/
+        /* exemplo de animação que altera a cor */
+        @keyframes mudarCor {
+            0% {
+                background-color: red;
+            }
+            50% {
+                background-color: blue;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        .animado {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: mudarCor 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="animado"></div>
+</body>
+</html>
