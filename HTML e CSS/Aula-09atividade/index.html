@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade dos Efeitos</title>
+    <style>
+        div:not(.rotat){
+            height: 200px;
+            width: 200px;
+            border: solid 1px black;
+            border-radius: 200px;
+            display: inline-block;
+        }
+        @keyframes animando{
+            0%{
+                background-color: mediumpurple;
+            }
+            10%{
+                transform: translateX(20px);
+                transform: translateY(-100px);
+            }
+            30%{
+                background-color: yellow;
+                transform: translateX(90px);
+                transform: translateY(-200px);
+            }
+            50%{
+                background-color: aqua;
+                transform: translateX(50px);
+                transform: translateY(-50px);
+            }
+            70%{
+                background-color: yellowgreen;
+                transform: translateX(-10px);
+                transform: translateY(100px);
+            }
+
+            100%{
+                transform: translateX(0);
+                transform: translateY(0);
+                background-color: mediumpurple;
+            }
+        }
+        h1{
+            width: fit-content;
+            margin: auto;
+            margin-top: 40%;
+            color: brown;
+            display: block;
+        }
+        .trans{background-color: aqua; transition: transform 1s;}
+        .scala{background-color: black; transition: transform 1s;}
+        .rotat{
+            background-color: cadetblue;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            transition: transform 4s;
+        }
+        .opaco{background-color: darkgoldenrod; transition: opacity 3s; opacity: 1;}
+        .anima{
+            background-color: mediumpurple;
+            h1{
+                margin-top: 30%;
+            }
+        }
+        .trans:hover{
+            transform: translate(100px, 200px);
+        }
+        .scala:hover{
+            transform: scale(2.5);
+        }
+        .rotat:hover{
+            transform: rotate(235deg);
+        }
+        .opaco:hover{
+            opacity: 0.15;
+        }
+        .anima:hover{
+            animation: animando 7s linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="trans"><h1>translate</h1></div>
+    <div class="scala"><h1>scale</h1></div>
+    <div class="rotat"><h1>rotate</h1></div>
+    <div class="opaco"><h1>opacity</h1></div>
+    <div class="anima"><h1>keyframes e <br> animation</h1></div>
+</body>
+</html>
