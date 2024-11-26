@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>atividade dos Efeitos</title>
     <style>
-        div:not(.rotat){
+        body{
+            background: linear-gradient(90deg, red, brown, orange, yellow, yellowgreen);  
+        }
+        div:not(.rotat, .fudo){
             height: 200px;
             width: 200px;
             border: solid 1px black;
@@ -24,7 +27,7 @@
                 transform: translate(-820px, 260px);
             }
             20%{
-                transform: translate(-720px, 560px);
+                transform: translate(-720px, 460px);
             }
             25%{
                 transform: translate(-820px, 260px);                
@@ -35,23 +38,61 @@
                 transform: translate(-820px, 18px);
             }
             35%{
-                transform: translate(-620px, 18px);
+                transform: translate(-615px, 18px);
+            }
+            40%{
+                transform: translate(-615px, 360px);
+            }
+            41%{
+                transform: translate(-615px, 360px) scale(2.5);
+            }
+            45%{
+                transform: translate(-615px, 360px) scale(1);
             }
             50%{
                 background-color: aqua;
                 /* transform: translate(50px, -50px); */
-                transform: translate(-820px, 18px);
+                transform: translate(-615px, 18px);
             }
+            55%{
+                transform: translate(-410px, 18px);
+            }
+            60%{
+                transform: translate(-410px, 360px);
+            }
+            62%{
+                border-radius: 15px;
+                transform: translate(-410px, 360px) rotate(300deg);
+            }
+            65%{
+                border-radius: 200px;
+                transform: translate(-410px, 18px);
+            }
+
             70%{
                 background-color: yellowgreen;
                 /* transform: translate(-100px, 500px); */
-                transform: translate(-820px, 18px);
+                transform: translate(-205px, 18px);
+                opacity: 1;
             }
-
+            77%{
+                transform: translate(-205px, 360px);
+                opacity: 0.5;
+            }
+            80%{
+                transform: translate(-205px, 360px);
+                opacity: 0.1;
+            }
+            87%{
+                transform: translate(-205px, 18px);
+                opacity: 1;
+            }
+            90%{
+                transform: translate(0, 18px);
+                background-color:  blue;
+            }
             100%{
-                /* transform: translateX(0); */
-                /* transform: translateY(0); */
-                /* transform: translate(-800px); */
+                transform: translate(0, 18px); 
                 background-color: mediumpurple;
             }
         }
@@ -75,6 +116,7 @@
         .anima{
             background-color: mediumpurple;
             transform: translateY(20px);
+            opacity: 1;
             h1{
                 margin-top: 30%;
             }
