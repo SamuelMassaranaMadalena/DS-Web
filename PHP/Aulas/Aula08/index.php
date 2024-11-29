@@ -1,4 +1,5 @@
 <?php
+//arrays multidimensionais
     $produtos = array(
         'eletrodomesticos' => array(
             array('nome' => 'Geladeira', 'preco' => 3500),
