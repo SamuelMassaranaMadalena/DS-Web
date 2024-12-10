@@ -1,0 +1,74 @@
+body{
+    /* cor do fundo da página */
+    background-color: lightgray;
+}
+div{
+    display: flex;
+}
+.aaa{
+    width: fit-content;
+    /* tamanho horizontal o mesmo do conteúdo */
+    padding: 3%;
+    margin-left: 16%;
+    margin-top: 10%;
+    border-radius: 10px;
+    margin-bottom: 7%;
+    /* estilizações de borda, margem e padding */
+    background-color: white;
+    display: block;
+    /* cor de fundo branca e todo conteúdo dentro é mostrado como um bloco */
+    form{
+        margin-left: 19%;
+        margin-bottom: 10px;
+        /* estilização da margem do formulário */
+    }
+    table{
+        margin: auto;
+        /* estilização da margem da tabela*/ 
+    }
+}
+.bbb{
+    width: fit-content;
+     /* tamanho horizontal o mesmo do conteúdo */
+    padding: 3%;
+    margin-bottom: 7%;
+    margin-left: 2%;
+    margin-top: 10%;
+    border-radius: 10px;
+    /* estilizações de borda, margem e padding */
+    background-color: white;
+    display: block;
+    /* cor de fundo branca e todo conteúdo dentro é mostrado como um bloco */
+    form{
+        margin-left:34%;
+        margin-bottom: 10px;
+        /* estilização da margem do formulário */
+    }
+    table{
+        margin: auto;
+        /* estilização da margem da tabela*/ 
+    }   
+}
+form{
+    margin-right: 10%;
+    /* estilização dos formulários */
+}
+td, th, table{
+    border: solid 0.5px black;
+    margin-top: 100px;
+    /* estilização da borda da tabela e margem */
+}
+.tao{
+    margin-left: 40%;
+    /* estilização da div dos botões de logout e cookie */
+}   
+button{
+    display: inline-block;
+    margin: auto;
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    margin-right: 30px;
+    border-radius: 10px;
+    /* estilização dos botões para deixá-los maiores */
+}
