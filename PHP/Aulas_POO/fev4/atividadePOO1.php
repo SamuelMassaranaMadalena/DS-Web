@@ -153,16 +153,14 @@
         public $saldo;
 
         public function depositar($a){
-            $saldo = $this->saldo + $a;
-            $this->saldo = $saldo;
+            $this->saldo += $a;
             return "depositando R$" . $a . " ao seu saldo atual" . "<br>";
         }
         public function sacar($a){
             if($a > $this->saldo){
                 return "saldo insuficiente" . "<br>";
             }else{
-                $saldo = $this->saldo - $a;
-                $this->saldo = $saldo;
+                $this->saldo -= $a;
                 return "sacando R$" . $a . "<br>";
             }    
         }
