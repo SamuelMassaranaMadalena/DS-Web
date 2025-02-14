@@ -1,6 +1,7 @@
-function GRITA_NAO(a){
-    var a = window.document.getElementsByTagName("input");
-    var escreve = window.document.getElementById("escrita");
-    document.getElementById("escrita").innerText = toUpperCase(a);
+function GRITA_NAO(){
+    var msgs = window.document.getElementById('input').value;
+    var res = window.document.getElementById("escrita");
+    console.log(msgs);
+    res.innerText = msgs.toUpperCase();
 
 }
