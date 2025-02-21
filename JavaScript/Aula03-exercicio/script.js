@@ -4,7 +4,7 @@ let botao = document.getElementById('butao');
 var numcard = 1;
 
 function apaga(){
-    document.getElementsByTagName('body')[0].removeChild();
+    document.getElementsByTagName('body')[0].remove();
 }
 
 function criaCartao(){
