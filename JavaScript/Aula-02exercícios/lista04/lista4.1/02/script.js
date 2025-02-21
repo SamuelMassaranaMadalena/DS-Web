@@ -5,7 +5,7 @@ function escreveDuplo(){
     let copia = window.document.getElementById('copia');
     copia.value = escrev.value;
     console.log(escrev.value);
-    console.log(copia.value);   
+    console.log(copia.value);
 }
 
 escrev.addEventListener('keyup', escreveDuplo);
