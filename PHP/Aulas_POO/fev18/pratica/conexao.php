@@ -5,9 +5,9 @@
     $dadinhos = $db->query("SELECT * FROM clientela");
     $total = $dadinhos->fetchAll(PDO::FETCH_ASSOC);
     foreach ($total as $fileira){
-        echo "Linha: ".$fileira['id'];
+        echo "<span>Linha: ".$fileira['id'];
         echo " Nome: ".$fileira['nome'];
-        echo " E-mail: ".$fileira['email'];
+        echo " E-mail: ".$fileira['email'] . "</span>";
         echo "<br>";
     }
     if(isset($_POST['nome'])){
