@@ -1,35 +1,6 @@
 body {
     background-color: #f4f4f4;
 }
-
-/* Código CSS do Menu Horizontal*/
-ul {
-    padding-inline-start: 0em;
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-li {
-    padding-left: 100px;
-    padding-right: 100px;
-    display: inline-block;
-    list-style: none;
-}
-li .meumenu {
-   font-family: 'open_sansbold';
-   font-size: 1.6em;
-   text-decoration: none;
-   color: #4c4c4c;
-   border: 0 1px 0 0 #4c4c4c;
-   border-bottom: 4px solid transparent;
-   transition: border-bottom .3s linear;
-}
-li .meumenu:hover {
-    border-bottom: 4px solid #4c4c4c;
-}
-
-
-/* Código CSS do Conteudo da pagina */
 .container {
     margin: 0 auto;
     width: 500px;

@@ -1,22 +1,36 @@
 #divi{
     width: 400px;
-    height: 250px;
+    height: fit-content;
     margin: auto;
     margin-top: 10%;
-    background-color: gray;
-    align-content: center;
     border-radius: 5px;
     border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+    align-content: center;
 }
-input{
-    height: 40px;
-    width: 250px;
-    max-width: 350px;
-    border-radius: 8px;
-    margin-left: 8%;
+input, textarea, label{
+    max-height: 220px;
+    min-height: 40px;
+    max-width: 365px;
+    min-width: 355px;
+    margin-left: 5%;
     margin-right: 8%;
     margin-bottom: 15px;
+    border-radius: 8px;
 }
-#butao{
-    margin: auto;
+input{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    resize: vertical;
+    overflow: hidden;
+}
+input#butao{
+    width: 365px;
 }

@@ -8,8 +8,10 @@
 </head>
 <body>
     <div id="divi">
-        <input type="text" id="nome" required>
-        <input type="text" id="descricao" required maxlength="300">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" required class="text" maxlength="100"><br>
+        <label for="descricao">Descrição</label><br>
+        <textarea type="text" id="descricao" required maxlength="300" class="text"></textarea><br>
         <input type="submit" id="butao" value="enviar"></input>
     </div>
 </body>
