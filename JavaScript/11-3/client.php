@@ -31,11 +31,6 @@
             <label for="obs">Observation</label>
         </div>
 
-        <style>
-
-
-
-        </style>
         <?php
             session_start();
             if(isset($_SESSION['erro'])){
