@@ -24,12 +24,12 @@
     <p class="wrapper alert-wrapper" id="alert-wrapper"></p>
     <p class="wrapper observation-wrapper" id="observation-wrapper"></p>
 
-    <div class="table-products">
+    <div class="table-sales">
         <h1>Sales</h1>
-        <?php include "./assets/components/tableClients.php"?>
+        <a href="./createSales.php"><button>Create Sale</button></a>
+        <?php include "./assets/components/tableSales.php"?>
     </div>
 
-    <?php include "./assets/components/tableSales.php"?>
 </body>
 <script src="./assets/js/script.js"></script>
 </html>

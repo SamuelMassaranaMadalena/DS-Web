@@ -71,7 +71,7 @@ function productQuant(id, quant) {
             } else {
                 product[id].totalPrice -= product[id].price
             }
-            
+            notice = ""
             updateProduct()
         } else {
             alert = "The selected quantity exceeded the stock limit."
@@ -241,7 +241,6 @@ async function submitSale(){
                 nameClient : client['name']
             },
             product: Object.values(product),
-            totalPrice: totalValueCart
         }
         console.log(datas)
         let response = await fetch("./sales/insertSales.php", {
@@ -252,6 +251,7 @@ async function submitSale(){
 
         let data = await response.text();
         console.log("Post created:", data);
+        window.location.href = "./sales.php"
     }catch(error){
         console.error("Error creating post:", error);
     }
