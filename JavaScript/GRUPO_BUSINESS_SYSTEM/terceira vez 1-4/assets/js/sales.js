@@ -71,7 +71,6 @@ function productQuant(id, quant) {
             } else {
                 product[id].totalPrice -= product[id].price
             }
-            notice = ""
             updateProduct()
         } else {
             alert = "The selected quantity exceeded the stock limit."
@@ -85,7 +84,10 @@ function productQuant(id, quant) {
 
 function excludeProduct(id) {
     delete product[id]
-    alert = ""
+    alert = "Product successfuly excluded!"
+    notice = ""
+
+    showAlert(alert)
     updateCart();
 }
 
@@ -225,7 +227,9 @@ function makeCard() {
 }
 
 function updateCart() {
-    showNotice(notice);
+    if(notice != ""){
+        showNotice(notice);
+    }
     if (client["id"]) {
         makeCard();
         updateClient();
