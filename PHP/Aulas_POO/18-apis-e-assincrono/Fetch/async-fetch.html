@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch async</title>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <button onclick="getUsers()">Carregar Usuários</button>
+    <ul id="user-list"></ul>
+</body>
+<script>
+    async function getUsers() {
+        try {
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+            let users = await response.json();
+            let list = document.getElementById("user-list");
+            list.innerHTML = ""; // Limpa a lista antes de adicionar novos itens
+            users.forEach(user => {
+                let listItem = document.createElement("li");
+                listItem.textContent = `${user.title} - ${user.body}`;
+                list.appendChild(listItem);
+            });
+        } catch (error) {
+            console.error("Erro ao buscar usuários:", error);
+        }
+    }
+</script>
+</html>
