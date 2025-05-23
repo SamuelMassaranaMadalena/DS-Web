@@ -1,0 +1,2 @@
+echo rápido php
+<?= "olá mundo"; ?>

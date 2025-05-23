@@ -1,0 +1,15 @@
+# Ativar o mod_rewrite
+RewriteEngine On
+
+# Redirecionar /inicio para index.html
+RewriteRule ^inicio$ index.html [L]
+
+# URL amigável: /produto/123 → produto.php?id=123
+RewriteRule ^produto/([0-9]+)$ produto.php?id=$1 [L]
+RewriteRule ^produto$ produto.php [L]
+
+# Bloquear acesso ao arquivo dados.txt
+<Files "dados.txt">
+    Order Allow,Deny
+    Deny from all
+</Files>

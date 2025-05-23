@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <button onclick="conexaoproduto()">PRAGA</button>
+    <button onclick="conexaocliente()">PREGADORES</button>
+</body>
+<script>
+    async function conexaoproduto(){
+        let dados = await fetch("./conexao.php");
+        let lista = await dados.text();
+        document.querySelector('p').innerHTML = lista;
+    }
+    async function conexaocliente(){
+        let dados = await fetch("./cone.php");
+        let list = await dados.text();
+        document.querySelector('p').innerHTML = list;
+    }
+</script>
+</html>
