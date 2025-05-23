@@ -22,7 +22,7 @@ class Produto{
     }
 
     public function prepareInsert(array $parameter = []){
-        var_dump($parameter);
+        // var_dump($parameter);
         $stmt = $this->conexao->executeQuery("INSERT INTO produtos (nomeProduto, fotoProduto, precoProduto, estoqueProduto) VALUES (:nomeProduto, :fotoProduto, :precoProduto, :estoqueProduto)", $parameter);
     }
 

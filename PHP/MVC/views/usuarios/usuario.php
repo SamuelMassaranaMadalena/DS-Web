@@ -6,7 +6,7 @@
 <div class="container">
     <div class="formulario">
         <div class="div-photo">
-            <img src="/mvc_php/fotos/<?=!empty($fotoUsuario) ? $fotoUsuario : "user.png";?>" class="photo-user" id="previewImagem" alt="Imagem de perfil do usuário">
+            <img src="/MVC/fotos/<?=!empty($fotoUsuario) ? $fotoUsuario : "user.png";?>" class="photo-user" id="previewImagem" alt="Imagem de perfil do usuário">
             <p>Recomenda-se uma imagem de dimensão 200px X 200xp</p>
         </div>
         <form action="usuario" method="POST" name="formulario" enctype="multipart/form-data">

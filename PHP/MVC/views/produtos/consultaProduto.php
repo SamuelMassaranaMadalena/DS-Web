@@ -12,7 +12,7 @@
                 echo "<td>$nomeProduto</td>";
                 echo "<td>$precoProduto</td>";
                 echo "<td>$estoqueProduto</td>";
-                echo "<td><img id='previewImagem' src='/mvc_php/fotos/$fotoProduto'/></td>";
+                echo "<td><img id='previewImagem' src='/MVC/fotos/$fotoProduto'/></td>";
             echo "</tr>";
         }
     ?>

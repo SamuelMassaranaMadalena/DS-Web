@@ -4,8 +4,8 @@ $subRota = $caminho[1] ?? null; //Verifica se há algo na segunda rota
 switch($subRota){
     case '':
         if (count($_POST) > 0){
-            var_dump($_POST);
-            var_dump($_FILES);
+            // var_dump($_POST);
+            // var_dump($_FILES);
 
             require_once './models/usuario.php';
             extract($_POST);

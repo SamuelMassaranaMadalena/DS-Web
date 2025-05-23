@@ -1,7 +1,7 @@
 
 <div class="div-product">
     <p>Imagem do produto</p>
-        <img id="previewImagem" src="/mvc_php/fotos/<?=!empty($fotoProduto) ? $fotoProduto : "semProduto.png";?>" class="photo-product">
+        <img id="previewImagem" src="/MVC/fotos/<?=!empty($fotoProduto) ? $fotoProduto : "semProduto.png";?>" class="photo-product">
         </div>
 <div>
     <form action="cadastro" method="post" enctype="multipart/form-data">

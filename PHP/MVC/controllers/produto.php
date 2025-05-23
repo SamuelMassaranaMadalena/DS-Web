@@ -15,7 +15,7 @@ switch($subRota){
             require_once './models/produto.php';
             $produto = new Produto;
             $produto->validaInsert($nomeProduto, $precoProduto, $estoqueProduto, $_FILES);
-            header("location: /mvc_php/produto");
+            header("location: /MVC/produto");
         }
         require './views/produtos/cadastroProduto.php';
         break;
@@ -26,10 +26,10 @@ switch($subRota){
             require_once "./models/produto.php";
             $delProd = new Produto;
             $delProd->excluirProduto($id);
-            header("location: /mvc_php/produto");
+            header("location: /MVC/produto");
             break;
         }
-        header("location: /mvc_php/produto");
+        header("location: /MVC/produto");
         break;
     default:
         if(preg_match('/^produto\/([0-9]+)$/', $url, $matches)) {
